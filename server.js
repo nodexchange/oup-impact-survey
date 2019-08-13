@@ -5,33 +5,15 @@ const Router = require('koa-router');
 const views = require('koa-views');
 const serve = require('koa-static');
 const path = require('path');
-const packageJson = require('./package.json');
-
-/* use as desired */
-const nameParts = packageJson.name.split('-');
-const contentName = nameParts[nameParts.length - 1];
 
 const app = new Koa()
   .use(cors())
   .use(serve('./public/'))
-  .use(views(path.resolve(__dirname, 'views'), {
-    map: {
-      hbs: 'handlebars',
-    },
-    extension: 'hbs',
-    options: {
-      partials: {
-        contentType: `./${contentName}`,
-      },
-    },
-  }));
+  .use(views(path.resolve(__dirname, 'views')));
 
 const router = new Router()
   .get('/', async (ctx) => {
-    await ctx.render('preview', {
-      pageTitle: 'OUP HE Flashcard',
-      env: 'localhost-debug',
-    });
+    await ctx.render('survey');
   });
 
 app.use(router.routes());
