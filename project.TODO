@@ -1,0 +1,22 @@
+Flashcards template:
+  Grunt:
+    ✔ @high Show commands or actions in the command pallette @done (26/06/2019, 12:09:41)
+    ✔ @medium Click on the pending symbol of a task to complete it @done (26/06/2019, 12:09:42)
+    ✔ @medium Ability to multi select and perform actions @done (26/06/2019, 12:09:43)
+    ✔ @low Separate the pending tasks from completed and cancelled tasks @done (26/06/2019, 12:09:43)
+    ✔ grunt to create a public folder @done (27/06/2019, 17:38:13)
+    ✔ grunt to create vendor css within public folder @done (27/06/2019, 17:38:15)
+    ✔ grunt to create vendor js inside the js folder @done (27/06/2019, 17:38:17)
+    ✔ javascript vendors to be copied to public js @done (27/06/2019, 17:38:48)
+    ☐ Do auto correction when the file is refreshed
+    ✔ grunt to create a view folder. @done (01/07/2019, 11:37:54)
+    ✔ grunt to create partials within the view folder @done (01/07/2019, 11:37:56)
+    ✔ grunt to create helpers within the view folder @done (01/07/2019, 11:37:59)
+    ☐ javascript to be combined and copied into the helpers
+    ☐ handlebars combined and pushed into views
+    ☐ handlebars partials combined and pushed into views/partials
+    ☐ includes references changed from / to ./ (will that break stuff?)
+  ARC:
+    ✔ @high Make tags case-insensitive @done
+    ☐ @low Due date support
+    ✔ @low Add a completion date when task is completed @done (10/3/2016, 8:26:21 AM)
